@@ -7,13 +7,13 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>TT Fullstack exercise</title>
+        <title>TT full stack exercise</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to the tokenterminal fullstack exercise.
+          Welcome to the Token Terminal full stack exercise.
         </h1>
 
         <p className={styles.description}> Now let's get started!
