@@ -1,4 +1,4 @@
-# TokenTerminal Full-Stack exercise API
+# Token Terminal full stack exercise API
 
 See the README.md in repository root for the API documentation.
 
