@@ -7,7 +7,6 @@ Make sure you showcase your skills and adopt good programming practices. Here ar
 * Meaningful commit history.
 * Good code style - we value code written for other developers, not a tutorial nor a one-off hack.
 * Code that follows the conventions and paradigms (Modern react, use of typescript without casting everything to `any`).
-* Tests (no need for 100% coverage).
 
 To return your homework, push the code the code to the GitHub repository provided. Each candidate is set up with a private repository.
 
