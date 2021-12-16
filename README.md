@@ -55,7 +55,7 @@ Make the site look pretty. Feel free to use any suitable library for this.
 
 The API returns project name, id, price, and TVL for each available project. 
 
-The API response is in the following format:
+The API response is in the following format (note we're just showing two representative projects):
 
 ```json
 {
@@ -71,10 +71,7 @@ The API response is in the following format:
       "projectId": "1inch",
       "price": 2.66,
       "tvl": 69810236.87849136
-    },
-
-    // ...
-
+    }
   ]
 }
 ```
