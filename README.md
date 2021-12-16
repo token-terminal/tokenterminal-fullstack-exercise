@@ -5,10 +5,10 @@ This assignment involves a few tasks to assess your familiarity with tools we of
 Make sure you showcase your skills and adopt good programming practices. Here are some aspects we find particularly important:
 
 * Meaningful commit history.
-* Good code style - we value code written for other developers, not a tutorial nor a one-off hack.
-* Code that follows the conventions and paradigms (Modern react, use of typescript without casting everything to `any`).
+* Good code style - we value code written for other developers.
+* Code that follows the conventions and paradigms.
 
-To return your homework, push the code the code to the GitHub repository provided. Each candidate is set up with a private repository.
+Fork this repositoty to get started. Once you are ready to return your homework, push all the code to your fork and email the link to your contact.
 
 We don't expect you to spend more than two days on this assignment. In case you do, please let us know. Returning a partial solution is acceptable. If this is the case, please mention which features are missing. 
 
@@ -23,6 +23,9 @@ This contains API you'll use throughout this assignment. Run `npm ci` on this di
 ### `./frontend`
 
 This contains the Next.js React application you'll be editing. Run `npm ci` on this directory to install the required dependencies. To start the development server, run `npm dev`.
+
+
+# Assignment
 
 ## Task 1: Metrics overview (`/overview`)
 
@@ -109,7 +112,7 @@ Sets or updates the warning.
 
 The body is in the same format as the example above.
 
-Returns status 200 when saved successfully, and 500 if some of the keys are missing from the request body.
+Returns status 200 when saved successfully, and 400 if some of the keys are missing from the request body.
 
 ### `DELETE /projects/:projectId/warnings`
 
