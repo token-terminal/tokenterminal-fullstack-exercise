@@ -132,6 +132,15 @@ The API response is in the following format:
 }
 ```
 
+
+If no warnings are set, the API returns 404 with the body:
+
+```json
+{
+  "error": "No warnings set"
+}
+```
+
 #### `POST /projects/:projectId/warnings`
 
 Sets or updates the warning. 
