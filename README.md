@@ -31,11 +31,23 @@ This contains the Next.js React application you'll be editing. Run `npm ci` on t
 
 Use the provided endpoint `http://localhost:3001/projects` (see API docs below) to render a list of projects with price and total value locked (TVL) metrics. Please note that TVL may not be available for some projects.
 
-## Task 2: Project page (`/projects/:projectId`)
+## Task 2: Metrics summary (`/overview`)
+
+Using the same page, `/overview`, build an summary section. 
+We want to show which project has: 
+a) the greatest price.
+b) the smallest price.
+c) the greatest TVL.
+d) the smallest TVL.
+
+Use the same `http://localhost:3001/projects` endpoint to list all projects and calculate the numbers from there.
+
+
+## Task 3: Project page (`/projects/:projectId`)
 
 Use `projectId` from the URL to show only the data for the project. Use the API endpoint: `http://localhost:3001/projects/:projectId` (see API docs below).
 
-## Task 3: Project data management (`/projects/:projectId`)
+## Task 4: Project data management (`/projects/:projectId`)
 
 We want to be able to configure warnings on a project-by-project basis to inform our users if something is wrong with its data.
 
@@ -47,7 +59,7 @@ c) Clear the warning
 
 Use the API endpoint: `http://localhost:3001/projects/:projectId/warnings` (see API docs below)
 
-## Bonus Task: 4
+## Bonus Task: 5
 
 Make the site look pretty. Feel free to use any suitable library for this. 
 
