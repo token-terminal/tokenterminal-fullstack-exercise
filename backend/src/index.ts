@@ -61,6 +61,7 @@ app.get(`/projects/:projectId`, async (req: express.Request, res: express.Respon
 app.get(`/projects/:projectId/warnings`, async (req: express.Request, res: express.Response): Promise<void> => {
   const projectId = req.params.projectId;
   try {
+    await fs.promises.mkdir(`./data`, { recursive: true });
     const data = await fs.promises.readFile(join(`./data`, `${projectId}.json`));
     res.send(data);
     return;
@@ -94,6 +95,7 @@ app.post(`/projects/:projectId/warnings`, async (req: express.Request, res: expr
   }
   console.log(`Writing ${projectId}.json data: ${JSON.stringify(data)}`);
   try {
+    await fs.promises.mkdir(`./data`, { recursive: true });
     await fs.promises.writeFile(join(`./data`, `${projectId}.json`), JSON.stringify(data));
     res.send({ success: true });
     return;
@@ -108,6 +110,7 @@ app.delete(`/projects/:projectId/warnings`, async (req: express.Request, res: ex
   const projectId = req.params.projectId;
   console.log(`Deleting ${projectId}.json`);
   try {
+    await fs.promises.mkdir(`./data`, { recursive: true });
     await fs.promises.unlink(join(`./data`, `${projectId}.json`));
     res.send({ success: true });
     return;
