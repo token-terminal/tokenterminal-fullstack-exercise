@@ -5,20 +5,19 @@
   </a>
 </p>
 
-
 # Full Stack Interview Assignment for Token Terminal
 
 This assignment involves a few tasks to assess your familiarity with tools we often use at Token Terminal, namely Next.js with TypeScript (frontend) and express with TypeScript (API). You are going to be building an internal dashboard for Token Terminal. See the "API documentation" section for details on the API you'll use.
 
 Make sure you showcase your skills and adopt good programming practices. Here are some aspects we find particularly important:
 
-* Meaningful commit history.
-* Good code style - we value code written for other developers.
-* Code that follows the conventions and paradigms.
+- Meaningful commit history.
+- Good code style - we value code written for other developers.
+- Code that follows the conventions and paradigms.
 
 Fork this repositoty to get started. Once you are ready to return your homework, push all the code to your fork and email the link to your contact.
 
-We don't expect you to spend more than two days on this assignment. In case you do, please let us know. Returning a partial solution is acceptable. If this is the case, please mention which features are missing. 
+We don't expect you to spend more than two days on this assignment. In case you do, please let us know. Returning a partial solution is acceptable. If this is the case, please mention which features are missing.
 
 ### Getting started
 
@@ -31,9 +30,6 @@ This contains API you'll use throughout this assignment. Run `npm ci` on this di
 #### `./frontend`
 
 This contains the Next.js React application you'll be editing. Run `npm ci` on this directory to install the required dependencies. To start the development server, run `npm dev`.
-
-
-
 
 # Assignment
 
@@ -55,14 +51,14 @@ We want to show which project has:
 
 Use the same `http://localhost:3001/projects` endpoint to list all projects and calculate the numbers from there.
 
-
 ## Task 3: Project page (`/projects/:projectId`)
 
 Use `projectId` from the URL to show only the data for the project. Use the API endpoint: `http://localhost:3001/projects/:projectId` (see API docs below).
 You can read more about [dynamic routes with Next.js here](https://nextjs.org/docs/routing/introduction)
 
 ## Task 4a: Project data management (`/projects/:projectId`)
-Do either task 4a or 4b, depending on your instructions. 
+
+Do either task 4a or 4b, depending on your instructions.
 
 We want to be able to configure warnings on a project-by-project basis to inform our users if something is wrong with its data.
 
@@ -76,8 +72,8 @@ Start from the project page created in the previous task and implement the follo
 
 Use the API endpoint: `http://localhost:3001/projects/:projectId/warnings` (see API docs below)
 
-
 ## Task 4b Project data management
+
 Do either task 4a or 4b, depending on your instructions.
 
 This repository comes with a naive implementation for the Warnings API.
@@ -94,23 +90,27 @@ Implement the frontend and API that
 The new API could be the following:
 
 #### GET /projects/:projectId/warnings
+
 Lists all warnings for the project
 
 #### POST /projects/:projectId/warnings
+
 Creates a new warning for the project
 
 #### PATCH /projects/:projectId/warnings/:warningId
+
 Updates the selected warning
 
 #### DELETE /projects/:projectId/warnings/:warningId
-Deletes the selected warning
 
+Deletes the selected warning
 
 ## Task 5:
 
-In this exercise we are estending the frontend and API to support and require authentication.
+In this exercise we are extending the frontend and API to support and require authentication.
 
 Add the following features:
+
 1. Allow users to sign up with username and password
 2. Allow users to login and logout.
 3. Require the user to be logged in to use the API.
@@ -171,10 +171,9 @@ The API response is in the following format:
 ```json
 {
   "title": "string",
-  "text": "string",
+  "text": "string"
 }
 ```
-
 
 If no warnings are set, the API returns 404 with the body:
 
@@ -186,7 +185,7 @@ If no warnings are set, the API returns 404 with the body:
 
 #### `POST /projects/:projectId/warnings`
 
-Sets or updates the warning. 
+Sets or updates the warning.
 
 The body is in the same format as the example above.
 
